@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Supermercado+One&display=swap');
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    min-height: 100vh;
+    font-family: 'Supermercado One', cursive;
+    position: relative;
+    background-color: rgb(62, 193, 197);
+    
+    
+}
+.empty{
+    width: 200px;
+    height: 400px;
+}
+.button-container{
+    width: 100%;
+    height: 80vh;
+    background-color: transparent;
+    background-image: url('robot.gif');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center;
+    /* background-color: purple; for testing */
+    font-size: 2rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+   
+
+}
+button{
+    width: 100%;
+    /* margin-left: 30%; */
+    margin-top: 500px;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 800;
+    border: solid 0px transparent;
+    border-radius: 5px;
+    background-color: #ff3482;
+    box-shadow: 2px 2px 50px 10px rgba(0,0,0,0.2);
+    color: white;
+    font-size: 2rem;
+    transform: translateY(-2px);
+    margin-block: 10px;
+    
+
+
+}
+button:active{
+    transform: translateY(1%);
+}
+button:hover{
+    filter: brightness(95%);
+}
+button:disabled{
+    cursor: default;
+    filter: brightness(30%);
+
+}
+audio{
+    border-radius: 5px;
+    background-color: white;
+}
+#controlBar{
+    background-color: white;
+}
+.spinner{
+    width: 200px;
+    height: 200px;
+    background-image: url('spinner.gif');
+    background-position: center;
+    border-radius: 50px;
+
+}
+
+/* media query for tablet or smaller */
+
+@media (max-width:1000px){
+    .button-container{
+        background-size: cover;
+        background-position:center ;
+    }
+    button{
+        font-size: 2rem;
+        width: 100%;
+        margin-top: 200px;
+        /* margin-left: 50%; */
+        box-shadow: 5px 5px 30px 20px rgba(0,0,0,0.5);
+    }
+}
